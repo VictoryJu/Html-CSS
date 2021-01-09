@@ -1,0 +1,17 @@
+<!-- controls 옵션을 사용하지 않으면 아무것도 나타나지않는다.
+autoplay는 페이지 로드시 자동으로 재생시켜준다. 무한반복은 loop-->
+<audio src="./assets/audios/kimbug.mp3" controls></audio>
+<video src="./assets/videos/kimbug.mov" controls></video>
+
+<!-- 브라우져에 따라 지원하는 형식이 다를수있을경우에 밑에와 같이 사용하여
+    호환이 되게 한다.-->
+<video controls>
+    <source=src="./assets/videos/kimbug.mov" type="video">
+    <source=src="./assets/videos/kimbug.mp4" type="video">
+    <p>
+        크롬 브라우저를 사용해주세요
+    </p>
+</video>
+
+<iframe srt="htpps://www.naver.com" frameborder="0"></iframe>
+<!-- iframe은 직접 사용할일은 별로없고 유튜브나 트위터에서 share할때 iframe태그를사용한다.-->
