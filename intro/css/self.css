@@ -1,40 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500&display=swap');
 @media (min-width:768px) {}
-
-.title{
-        font-size: 20px;
-        font-family: 'Noto Sans KR', sans-serif;
-        width: 600px;
-        padding-right: 600px;
-}
-
-h1{
-        letter-spacing: 5px;
-       
-}
-
-
-
-h4{
-    width: 600px;
-    padding-right: 600px;
-}
-
-
-strong{
-    width: 600px;
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    width: 100%;
+    height: 50%;
+    font-size: 15px;
+    position: relative;
     margin-left: auto;
-    margin-right: 100px;
+    margin-right: auto;
 }
 
-.social-icons .social-icon {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    height: 3.5rem;
-    width: 3.5rem;
-    background-color: #495057;
-    color: #fff;
-    border-radius: 100%;
-    font-size: 1.5rem;
-    margin-right: 1.5rem;
-  }
+.header {
+    width: 100%;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+.title-side {
+    font-size: 15px;
+    line-height: 200%;
+}
+
+.body {
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: black;
+}
+
+.name {
+    width: 300px;
+    margin: 50px 500px 0px 700px;
+    font-weight: 500;
+    font-size: 45px;
+    letter-spacing: 20px;
+}
+
+.title {
+    width: 300px;
+    margin: 30px 500px 0px 750px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 2;
+}
+
+h2 {
+    width: 200px;
+    margin: 50px 0px 0px 400px;
+    font-weight: 700;
+    font-size: 40px;
+
+}
+
+.projects {
+    width: 600px;
+    margin-left: 500px;
+    line-height: 1.0;
+}
+
+.project-list {
+    width: 600px;
+    margin-left: 700px;
+    line-height: 2.0;
+}
+
+.skill {
+    width: 600px;
+    margin-left: 500px;
+    line-height: 2.0;
+}
+
+hr {
+    width: 800px;
+    margin-left: 500px;
+    margin-right: 500px;
+}
+
+.education-side {
+    width: 600px;
+    margin: 20px 0px 0px 500px;
+    line-height: 2.0;
+}
+
+.etc-side {
+    width: 800px;
+    margin: 20px 0px 0px 500px;
+    line-height: 2.0;
+}
