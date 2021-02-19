@@ -14,27 +14,87 @@
 
         body {
             width: 100%;
-            height: 500px;
+            height: 50%;
             font-size: 15px;
-            text-align: center;
+            position: relative;
         }
 
         .header {
             width: 100%;
-            height: 20%;
+            height: 100%;
+            margin-bottom: 50px;
+        }
+
+        .title-side {
+            font-size: 15px;
+            line-height: 200%;
         }
 
         .body {
             width: 100%;
-            height: 60%;
+            height: 100%;
             font-size: 16px;
-            line-height: 2.0;
             color: black;
         }
 
-        .footer {
-            width: 100%;
-            height: 20%;
+        .name {
+            width: 300px;
+            margin: 50px 500px 0px 700px;
+            font-weight: 500;
+            font-size: 45px;
+            letter-spacing: 20px;
+        }
+
+        .title {
+            width: 300px;
+            margin: 30px 500px 0px 750px;
+            font-weight: 300;
+            font-size: 20px;
+            line-height: 2;
+        }
+
+        h2 {
+            width: 200px;
+            margin: 50px 0px 0px 400px;
+            font-weight: 700;
+            font-size: 40px;
+
+        }
+
+        .projects {
+            width: 600px;
+            margin-left: 500px;
+            line-height: 1.0;
+        }
+
+        .project-list {
+            width: 600px;
+            margin-left: 700px;
+            line-height: 2.0;
+        }
+
+        .skill {
+            width: 600px;
+            margin-left: 500px;
+            line-height: 2.0;
+        }
+
+        hr {
+            width: 800px;
+            margin-left: 500px;
+            margin-right: 500px;
+        }
+
+        .education-side {
+            width: 600px;
+            margin: 20px 0px 0px 500px;
+            line-height: 2.0;
+        }
+
+        .etc-side {
+            width: 800px;
+            margin: 20px 0px 0px 500px;
+            line-height: 2.0;
         }
     </style>
 </head>
@@ -44,7 +104,7 @@
     <div class="header">
         <h1 class="name">최승주</h1>
         <div class="title">
-            <p class=title-side>
+            <p>
                 kob0805@naver.com </br>
                 01044890229 </br>
                 <a class="social-icon" href="https://github.com/VictoryJu" target="_blank"><i
@@ -91,25 +151,28 @@
                 <li>MongoDB를 사용하여 데이터베이스 구축</li>
                 <li>다른 직군과의 협업 경험</li>
             </ul>
-            </br>
         </div>
+        <hr color=#b4b4b4>
 
         <h2>Skill.</h2>
-        <ol>
-            <li>Front-End: HTML/CSS</li>
-            <li>Back-End: Node.js,Linux,Azure,AWS(EC2)</li>
-            <li>Database: MySQL, MongoDB</li>
-        </ol>
-
+        <div class="skill">
+            <ul>
+                <li>Front-End: HTML/CSS</li>
+                <li>Back-End: Node.js,Linux,Azure,AWS(EC2)</li>
+                <li>Database: MySQL, MongoDB</li>
+            </ul>
+        </div>
 
         <h2>Education.</h2>
-        <strong>가톨릭대학교 컴퓨터정보공학부 (2017.3 ~ 2021.2 수료)</strong> </br>
-        <strong>서울아이티고등학교 (2014.3 ~ 2017.2)</strong>
-    </div>
+        <div class="education-side">
+            <strong>가톨릭대학교 컴퓨터정보공학부 (2017.3 ~ 2021.2 수료)</strong> </br>
+            <strong>서울아이티고등학교 (2014.3 ~ 2017.2)</strong>
+        </div>
 
-    <div class="footer">
         <h2>ETC.</h2>
-        <strong>SSAC 스타트업에서 요구되는 풀스택 개발자 양성 과정 (2020.12 ~ 현재)</strong>
+        <div class="etc-side">
+            <strong>SSAC - 스타트업에서 요구되는 풀스택 개발자 양성 과정 (2020.12 ~ 현재)</strong>
+        </div>
     </div>
 </body>
 
