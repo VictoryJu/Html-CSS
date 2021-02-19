@@ -31,6 +31,7 @@ body {
 }
 
 .name {
+    color: #FE9A2E;
     width: 300px;
     margin: 50px 500px 0px 700px;
     font-weight: 500;
@@ -39,10 +40,11 @@ body {
 }
 
 .title {
+    
     width: 300px;
     margin: 30px 500px 0px 750px;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 19px;
     line-height: 2;
 }
 
@@ -51,9 +53,15 @@ h2 {
     margin: 50px 0px 0px 400px;
     font-weight: 700;
     font-size: 40px;
-
+    color: #FAAC58;
 }
 
+.introduce{
+    width: 700px;
+    margin: 20px 0px 0px 500px;
+    font-weight: 500;
+    font-size: 20px;
+}
 .projects {
     width: 600px;
     margin-left: 500px;
@@ -79,12 +87,14 @@ hr {
 }
 
 .education-side {
+    font-weight: 500;
     width: 600px;
     margin: 20px 0px 0px 500px;
     line-height: 2.0;
 }
 
 .etc-side {
+    font-weight: 500;
     width: 800px;
     margin: 20px 0px 0px 500px;
     line-height: 2.0;
