@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
     <title>regist</title>
 </head>
 <body>
@@ -13,15 +14,33 @@
             <div class="logo">
                 <h1>NEVER</h1>
             </div>
-            <input type="text" name="userid" class="text-field"></br>
-            <input type="text" name="userid" class="text-field"></br>
-            <input type="text" name="userid" class="text-field"></br>
-            <input type="text" name="userid" class="text-field"></br>
-            <input type="text" name="userid" class="text-field"></br>
-            <input type="text" name="userid" class="text-field"></br>
-            <input type="text" name="userid" class="text-field"></br>
-            <input type="submit" value="가입하기" class="submit-btn">
+            <form>
+                <h4>아이디</h4>
+                <input type="text" name="userId" class="text-field"></br>
+                <h4>비밀번호</h4>
+                <input type="password" name="userPasswd" class="text-field"></br>
+                <h4>비밀번호 재확인</h4>
+                <input type="password" name="userPasswdRe" class="text-field"></br>
+                <h4>이메일</h4>
+                <input type="email" name="userEmail" class="text-field"></br>
+                <input type="submit" value="가입하기" name="registBtn" class="submit-btn-regist">
+            </form>
         </div>
-    </div>   
+    </div>
+
+<script>
+    $(document).ready( function(){
+        $("#registBtn").click( function(){
+            let userPasswd = $("#userPasswd").val();
+            let userPasswdRe = $("#userPasswdRe").val();
+            if(userPasswd != userPasswdRe){
+                alert("패스워드가 일치하지 않습니다.");
+                $("#userPasswdRe").focus();
+                return false;
+            }
+        })
+    })
+</script>
+
 </body>
 </html>

@@ -45,6 +45,26 @@ body {
     color: white;
 }
 
+.submit-btn:hover {
+    cursor: pointer;
+}
+
+.submit-btn-regist {
+    font-size: 18px;
+    border: none;
+    margin-top: 20px;
+    padding: 10px;
+    width: 450px;
+    height: 60px;
+    background-color: #03C75A;
+    margin-bottom: 80px;
+    color: white;
+}
+
+.submit-btn-regist:hover {
+    cursor: pointer;
+}
+
 .text-field{
     border: none;
     font-size: 14px;
