@@ -14,22 +14,20 @@
             <div class="logo">
                 <h1>NEVER</h1>
             </div>
-            <form>
                 <h4>아이디</h4>
-                <input type="text" name="userId" class="text-field"></br>
+                <input type="text" id="userId" class="text-field"></br>
                 <h4>비밀번호</h4>
-                <input type="password" name="userPasswd" class="text-field"></br>
+                <input type="password" id="userPasswd" class="text-field"></br>
                 <h4>비밀번호 재확인</h4>
-                <input type="password" name="userPasswdRe" class="text-field"></br>
+                <input type="password" id="userPasswdRe" class="text-field"></br>
                 <h4>이메일</h4>
-                <input type="email" name="userEmail" class="text-field"></br>
-                <input type="submit" value="가입하기" name="registBtn" class="submit-btn-regist">
-            </form>
+                <input type="email" id="userEmail" class="text-field"></br>
+                <input type="submit" value="가입하기" id="registBtn" class="submit-btn-regist">
         </div>
     </div>
 
 <script>
-    $(document).ready( function(){
+    (function(){
         $("#registBtn").click( function(){
             let userPasswd = $("#userPasswd").val();
             let userPasswdRe = $("#userPasswdRe").val();
@@ -38,8 +36,8 @@
                 $("#userPasswdRe").focus();
                 return false;
             }
-        })
-    })
+        });
+    })();
 </script>
 
 </body>
