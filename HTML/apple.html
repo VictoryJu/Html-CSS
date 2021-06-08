@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>apple</title>
+    <style>
+        html,
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .header{
+            background-color: rgb(67, 67, 67);
+            
+        }
+        .nav-line{
+            /* background-color: red; */
+            margin: auto;
+            max-width: 900px;
+            width: 100%;
+            padding: 10px;
+            height: 25px;
+        }
+        .nav-list{
+            display: flex;
+            line-height:5px;
+            padding: 10px;
+            color: rgb(165, 165, 165);
+        }
+        .nav-list > .item{
+            flex: 1;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .container{
+            max-width: 100%;
+            margin: 0 auto;
+        }
+        
+        .main-container{
+            background-color: #ddd;
+        }
+
+        .main{
+            padding: 20px;
+        }
+
+        .product-line{
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+        }
+
+        .product-line > .item{
+            width: 150px;
+            height: 100px;
+            color: white;
+            text-align: center;
+            line-height: 100px;
+            margin-right: 50px;
+        }
+
+        .main-content{
+            margin-top:100px;
+            text-align: center;
+        }
+
+        .header-new{
+            font-size: 18px;
+        }
+        .header-text{
+            font-size: 60px;
+            line-height: 40px;
+            margin-bottom: 5px;
+        }
+        .sub-section{
+            width:100%;
+            height: 100%;
+            background-color: rgb(250, 250, 250);
+        }
+        .flex-sub{
+            margin: auto;
+            max-width:1200px;
+            height: 1000px;
+            padding-top: 100px;
+        }
+
+        .sub-content{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: center;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .sub-macAir{
+            flex:1;
+            flex-direction: column;
+        }
+
+        .sub-macPro{
+            flex:1;
+            flex-direction: column;
+        }   
+
+        .sub-macKing{
+            flex:1;
+            flex-direction: column;
+        }
+
+        img {
+            object-fit: cover;
+        }
+
+        .flex-title{
+            text-align: center;
+            font-size: 35px;
+        }
+
+        .flex-subTitle{
+            text-align: center;
+            width: 100%;
+            height: 200px;
+            
+        }
+
+        a{
+            text-decoration: none;
+            font-weight: 650;
+            color: rgb(86, 153, 208);
+        }
+
+        hr{
+            border: 0;
+            height: 1px;
+            background-color: #ccc;
+            width: 90%;
+        }
+
+        .buy-btn{
+            border: none;
+            background-color: #0071E3;
+            color: #FFFFFF;
+            font-size: 12px;
+            margin:0px 0px 18px;
+            padding: 4px 11px;
+            border-radius: 20px;
+        }
+
+        .sub-width{
+            margin: 30px 0px 4px;
+            font-size: 25px;
+        }
+
+        .sub-m1{
+            margin-top:50px;
+            margin-bottom: 74.5px;
+        }
+
+        .flex-img{
+            margin: auto;
+            max-width:1200px;
+            height: 1000px;
+            padding-top: 100px;
+        }
+
+        .img-main{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            text-align: center;
+            max-width: 1200px;
+            margin: auto;
+        }  
+
+        .img-mac{
+            flex:1;
+            flex-direction: column;
+            background-color:rgb(242, 242, 242);
+            height:700px;
+            margin-right: 25px;
+        }
+
+        .img-newMac{
+            flex:1;
+            flex-direction: column;
+            background-color:rgb(242, 242, 242);
+            height: 700px;
+        }
+
+        .img-macShop > h2{
+            margin:50px 0px 9px;
+        }
+
+        .img-shop-btn{
+            border: none;
+            font-weight: bold;
+            background-color: #0071E3;
+            color: #FFFFFF;
+            font-size: 17px;
+            margin:0px 0px 18px;
+            padding: 8px 16px;
+            border-radius: 20px;
+        }
+
+        .img-newMacShop-h3{
+            font-size: 17px;
+            color: rgb(88, 88, 89);
+            margin-bottom: 20px;
+        }
+
+        .img-macShop-title{
+            font-size: 24px; 
+            margin: 50px 0px 10px 0px; 
+            font-weight: bold;
+        }
+
+        .img-macShop-content{
+            font-size: 40px; 
+            font-weight: bold; 
+            margin-bottom: 20px;
+        }
+
+        .img-newMacShop-title{
+            font-size: 24px;
+            margin: 50px 0px 10px 0px; 
+            font-weight: bold; 
+        }
+
+        .img-newMacShop-content{
+            font-size: 40px; 
+            font-weight: bold; 
+            margin-bottom: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="nav-line">
+            <div class="nav-list">
+                <div class="item mac">Mac</div>
+                <div class="item ipad">iPad</div>
+                <div class="item watch">Watch</div>
+                <div class="item music">Music</div>
+                <div class="item req">고객지원</div>
+                <div class="item req">돋보기</div>
+                <div class="item req">장바구니</div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="main-container">
+            <div class="main">
+                <div class="product-line">
+                    <div class="item" style="background-color: black;">검정</div>
+                    <div class="item" style="background-color: red;">빨강</div>
+                    <div class="item" style="background-color: orange;">주황</div>
+                    <div class="item" style="background-color: yellow;">노랑</div>
+                    <div class="item" style="background-color: green;">초록</div>
+                    <div class="item" style="background-color: blue;">파랑</div>
+                </div>
+            </div>
+        </div>
+        <section class="main-section">
+            <div class="main-content">
+                <h2 class="header-text">
+                    <span class="header-new" style="color: rgb(250, 134, 0);">New</span>
+                    </br>
+                    iMac
+                </h2>
+                <p style="font-size: 30px;"><strong>이제 새롭게 만날 시간.</strong></p>
+                <img src="../public/아이맥.PNG" alt="아이맥">
+            </div>
+        </section>
+        <section class="sub-section">
+            <div class="flex-sub">
+                <h1 class="flex-title">당신에게 맞는 Mac은?</h1>
+                <div class="flex-subTitle">
+                    <a href="#">모든 Mac 모델 비교하기 ></a>
+                </div>
+                <div class="sub-content">
+                    <div class="sub-macAir">
+                        <img src="../public/맥에어.PNG" alt="맥에어" width="300px" height="150px">
+                        <h1>MacBook Air</h1>
+                        <h4>₩1,290,000부터</h4>
+                        <input type="button" class="buy-btn" value="구입하기">
+                        <hr>
+                        <div class="sub-retina">
+                            <h4 class="sub-width">13.3형</h4>
+                            <p class="sub-display">Retina 디스플레이</p>
+                        </div>
+                        <div class="sub-m1">
+                            <img src="../public/m1.PNG" alt="m1칩">
+                            <p>Apple M1 칩</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="sub-macPro">
+                        <img src="../public/맥프로.PNG" alt="맥프로13형" width="300px" height="150px">
+                        <h1>MacBook Pro 13형</h1>
+                        <h4>₩1,290,000부터</h4>
+                        <input type="button" class="buy-btn" value="구입하기">
+                        <hr>
+                        <div class="sub-retina">
+                            <h4 class="sub-width">13.3형</h4>
+                            <p class="sub-display">Retina 디스플레이</p>
+                        </div>
+                        <div class="sub-m1-pro" style="margin-top: 50px;">
+                            <img src="../public/m1.PNG" alt="m1칩">
+                            <p>Apple M1 칩</p>
+                            <p class="sub-m1-tip" style="color: #ccc;"> Intel Core i5 또는 i7 프로세서로도 </br>구성가능</p>
+                        </div>
+                        <hr>
+                    </div>
+                    <div class="sub-macKing">
+                        <img src="../public/맥킹.PNG" alt="맥프로16형" width="300px" height="150px">
+                        <h1>MacBook Pro 16형</h1>
+                        <h4>₩1,290,000부터</h4>
+                        <input type="button" class="buy-btn" value="구입하기">
+                        <hr>
+                        <div class="sub-retina">
+                            <h4 class="sub-width">16형</h4>
+                            <p class="sub-display">Retina 디스플레이</p>
+                        </div>
+                        <div class="sub-m1">
+                            <img src="../public/m1.PNG" alt="m1칩">
+                            <p>최대 Intel Core i9 프로세서</p>
+                        </div>
+                        <hr>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="img-section">
+            <div class="flex-img">
+                <div class="img-main">
+                    <div class="img-mac">
+                        <div class="img-macShop">
+                            <div class="img-macShop-title">액세서리</div>
+                            <div class="img-macShop-content">Mac 액세서리 살펴보기.</div>
+                            <input type="button" class="img-shop-btn" value="쇼핑하기">
+                        </div>
+                        <div class="img-macShopAc" style="margin-top: 180px;">
+                            <img src="../public/macShop.PNG" alt="Mac 액세서리" width="580px">
+                        </div>
+                    </div>
+                    <div class="img-newMac">
+                        <div class="img-newMacShop">
+                            <div class="img-newMacShop-title">Apple Trade In</div>
+                            <div class="img-newMacShop-content">새 Mac 구매시 사용할 수 <br>있는 크레딧을 받는 법.</div>
+                            <div class="img-newMacShop-h3">보상 판매 대상 컴퓨터를 크레딧으로 교환해드리거나, 무상으로 <br> 재활용해드립니다. 당신은 물론 지구에게도 좋은 일이죠.</div>
+                            <a href="#">보상 판매 가격 알아보기 ></a>
+                        </div>
+                        <div class="img-newMacAc" style="margin-top:88px;">
+                            <img src="../public/newMac.PNG" alt="newMac" class="" width="500px">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
